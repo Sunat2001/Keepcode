@@ -6,6 +6,7 @@ use App\Enum\ProductRentStatuses;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Carbon;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\RentProduct>
@@ -21,6 +22,7 @@ class RentProductFactory extends Factory
     {
         return [
             'status' => $this->faker->randomElement(ProductRentStatuses::getValues()),
+            'expired_at' => Carbon::now(),
             'user_id' => User::all()->random()->first()->id,
             'product_id' => Product::all()->random()->first()->id,
         ];

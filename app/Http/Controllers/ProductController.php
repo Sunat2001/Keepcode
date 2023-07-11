@@ -5,13 +5,11 @@ namespace App\Http\Controllers;
 use App\Enum\ProductStatuses;
 use App\Http\Requests\ProductRentRequest;
 use App\Models\Product;
-use App\Models\RentProduct;
 use App\Services\ExtendRentPeriodService;
 use App\Services\ProductRentalService;
 use App\Services\ProductSellerService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Carbon;
 
 class ProductController extends Controller
 {

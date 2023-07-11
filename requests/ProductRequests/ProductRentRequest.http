@@ -1,0 +1,8 @@
+POST http://localhost/api/product/rent/2
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL3JlZ2lzdGVyIiwiaWF0IjoxNjg5MDU5OTU0LCJleHAiOjE2ODkwNjM1NTQsIm5iZiI6MTY4OTA1OTk1NCwianRpIjoiMnFCRE02NGZ5cmRLY2tpTiIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.UqblaNq9FE5dqchu1179FXWjC0l1FmUHplwaUMYEsvo
+
+{
+    "period": 4
+}

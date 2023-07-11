@@ -11,7 +11,7 @@ Keepcode test task using:
 For start project, you need to install docker and docker-compose, after that you can run this command :
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 ```bash
 docker exec myapp composer install
@@ -26,3 +26,7 @@ docker exec myapp php artisan key:generate
 ```bash
 docker exec myapp php artisan jwt:secret
 ```
+
+## API Documentation
+
+All api endpoint available on folder request.

@@ -1,0 +1,8 @@
+POST http://localhost/api/product/rent/extend/2
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg5MDY1OTg4LCJleHAiOjE2ODkwNjk1ODgsIm5iZiI6MTY4OTA2NTk4OCwianRpIjoiS0lSMUdVanFnYzBITjV5eSIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7Pl-GCRo3QkB8Xx8WkDhy7FSadPOn4kfL8Dm8HfgZNk
+
+{
+    "period": 4
+}

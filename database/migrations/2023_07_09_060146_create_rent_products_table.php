@@ -15,6 +15,7 @@ return new class extends Migration
         Schema::create('rent_products', function (Blueprint $table) {
             $table->id();
             $table->enum('status', ProductRentStatuses::getValues());
+            $table->dateTime('expired_at');
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->foreignId('product_id')->constrained()->cascadeOnDelete();
             $table->timestamps();

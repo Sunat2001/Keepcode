@@ -26,7 +26,6 @@ use Illuminate\Support\Carbon;
  * @method static Builder|RentProduct whereStatus($value)
  * @method static Builder|RentProduct whereProduct($value)
  * @method static Builder|RentProduct whereUser($value)
- * @method static Builder|RentProduct get()
  */
 class RentProduct extends Model
 {

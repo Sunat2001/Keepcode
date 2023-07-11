@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\RentProduct;
+use Illuminate\Database\Eloquent\Collection;
 
 interface RentProductRepositoryInterface
 {
@@ -11,7 +12,7 @@ interface RentProductRepositoryInterface
      * @param string $product_id
      * @return RentProduct
      */
-    public function getRentProductByProductAndUser(string $user_id, string $product_id): RentProduct;
+    public function getRentProductByProductAndUser(string $user_id, string $product_id): RentProduct|Collection;
 
     /**
      * @param RentProduct $rentProduct

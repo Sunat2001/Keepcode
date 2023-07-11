@@ -30,4 +30,3 @@ Route::prefix('product')->middleware('auth:api')->group(function () {
     Route::post('rent/extend/{product}', [ProductController::class, 'extendRentPeriod']);
 });
 
-
