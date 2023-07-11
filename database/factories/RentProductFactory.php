@@ -21,8 +21,8 @@ class RentProductFactory extends Factory
     {
         return [
             'status' => $this->faker->randomElement(ProductRentStatuses::getValues()),
-            'user_id' => User::all()->random()->id,
-            'product_id' => Product::all()->random()->id,
+            'user_id' => User::all()->random()->first()->id,
+            'product_id' => Product::all()->random()->first()->id,
         ];
     }
 }

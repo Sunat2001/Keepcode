@@ -15,6 +15,7 @@ use Illuminate\Support\Carbon;
  *
  * @property integer $id
  * @property string $title
+ * @property string $description
  * @property string $status
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -40,14 +41,16 @@ class Product extends Model
         'status',
     ];
 
-    protected $casts = [
-        'price' => 'float'
-    ];
-
+    /**
+     * @return HasMany
+     */
     public function rentProducts(): HasMany {
         return $this->hasMany(RentProduct::class);
     }
 
+    /**
+     * @return BelongsToMany
+     */
     public function soldProducts(): BelongsToMany {
         return $this->belongsToMany(SoldProduct::class);
     }

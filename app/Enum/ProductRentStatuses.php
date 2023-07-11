@@ -11,7 +11,7 @@ enum ProductRentStatuses
     {
         return [
             self::ACTIVE,
-            self::EXPIRED
+            self::EXPIRED,
         ];
     }
 }

@@ -33,19 +33,16 @@ services:
             - mynet
 
     db:
-        image: postgres
+        image: mysql
         restart: always
         tty: true
         ports:
-            - "5432:5432"
+            - "3306:3306"
         environment:
-            POSTGRES_USER: root
-            POSTGRES_DB: slim
-            POSTGRES_PASSWORD: sunat
-            PGDATA: /var/lib/postgresql/data/pgdata
-            POSTGRES_HOST_AUTH_METHOD: trust
+            MYSQL_DATABASE: slim
+            MYSQL_ROOT_PASSWORD: secret
         volumes:
-            - pgdata:/var/lib/postgresql/data
+            - mysql:/var/lib/mysql
         networks:
             - mynet
 
@@ -65,7 +62,7 @@ networks:
         driver: bridge
 #Volumes
 volumes:
-    pgdata:
+    mysql:
         driver: local
     esdata:
         driver: local

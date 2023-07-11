@@ -40,7 +40,7 @@ class ProductController extends Controller
         return response()->json(['message' => 'Product successfully rented!']);
     }
 
-    public function extendRentPeriod(Request $request, Product $product) {
+    public function extendRentPeriod(Request $request, Product $product): JsonResponse {
         $request->validate([
             'period' => ['required', 'integer', 'max:24', 'min:1'],
         ]);

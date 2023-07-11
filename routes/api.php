@@ -27,6 +27,7 @@ Route::prefix('auth')->group(function (){
 Route::prefix('product')->middleware('auth:api')->group(function () {
     Route::post('buy/{product}', [ProductController::class, 'buy']);
     Route::post('rent/{product}', [ProductController::class, 'rent']);
+    Route::post('rent/extend/{product}', [ProductController::class, 'extendRentPeriod']);
 });
 
 
